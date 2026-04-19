@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FC Barcelona Store</title>
+    <link rel="icon" type="image/x-icon" href="D:\Nirdesh 11\Computer\Assignments\images\a.ico">
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body, html {
+height: 100%;
+font-family: Arial, sans-serif;
+}
+
+/* 🔹 NAVBAR */
+.navbar {
+position: fixed;
+top: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 40px;
+background: rgba(0,0,0,0.6);
+backdrop-filter: blur(10px);
+color: white;
+z-index: 1000;
+}
+
+.navbar h2 {
+font-size: 22px;
+}
+
+.navbar ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+.navbar ul li a {
+text-decoration: none;
+color: white;
+transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+color: #ffcc00;
+}
+
+/* 🔹 COVER */
+.cover {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: linear-gradient(135deg, #a50044, #004d98);
+color: white;
+text-align: center;
+position: relative;
+padding-top: 80px;
+padding-bottom:160px;
+}
+
+/* Title */
+.cover h1 {
+font-size: 60px;
+text-shadow: 2px 2px 6px black;
+animation: fadeIn 1.5s ease;
+}
+
+/* Logo */
+.logo {
+width: 100px;
+margin: 10px 0;
+}
+
+/* Slogan */
+.cover h2 {
+font-size: 26px;
+margin-top: -10px;
+margin-bottom: 10px;
+font-style: italic;
+}
+
+/* Description */
+.cover p {
+font-size: 20px;
+margin-top: 10px;
+}
+
+/* Button */
+.cover a {
+text-decoration: none;
+background: #ffcc00;
+color: black;
+padding: 15px 35px;
+font-size: 20px;
+margin-top: 20px;
+border-radius: 10px;
+transition: 0.3s;
+}
+
+.cover a:hover {
+background: #ffaa00;
+transform: scale(1.08);
+box-shadow: 0 0 15px #ffcc00;
+}
+
+/* 🔹 MERCH IMAGES */
+.merch-images {
+position: absolute;
+bottom: 20px;
+display: flex;
+gap: 20px;
+justify-content: center;
+width: 100%;
+}
+
+.merch-images img {
+width: 120px;
+height: 120px;
+border-radius: 10px;
+border: 2px solid white;
+object-fit: cover;
+transform: rotate(-10deg);
+transition: 0.3s;
+}
+
+.merch-images img:nth-child(2) { transform: rotate(5deg); }
+.merch-images img:nth-child(3) { transform: rotate(-5deg); }
+
+.merch-images img:hover {
+transform: rotate(0deg) scale(1.1);
+}
+
+/* 🔹 FOOTER */
+.footer {
+background: black;
+color: white;
+text-align: center;
+padding: 15px;
+font-size: 14px;
+}
+
+/* 🔹 ANIMATION */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔹 RESPONSIVE */
+@media (max-width: 768px) {
+.cover h1 { font-size: 40px; }
+.cover p { font-size: 16px; }
+
+.merch-images img {
+width: 90px;
+height: 90px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🔹 NAVBAR -->
+<div class="navbar">
+<h2>Barça Store</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="merch.html">Shop</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<!-- 🔹 COVER -->
+<div class="cover">
+<h1>FC Barcelona Store</h1>
+
+<!-- ✅ Your original path kept -->
+<img src="C:\Users\User\Downloads\barca-removebg-preview.png" class="logo">
+
+<h2>Més que un club</h2>
+
+<p>Official Merchandise | Jerseys | Hoodies | Accessories</p>
+
+<a href="merch.html">Enter Store</a>
+<div class="merch-images">
+<img src="C:\Users\User\Downloads\2009.png" alt="2009 HOME">
+<img src="C:\Users\User\Downloads\abcd.png" alt="HOODIE">
+<img src="C:\Users\User\Downloads\track.png" alt="SCARF">
+</div>
+</div>
+
+<!-- 🔹 FOOTER -->
+<div class="footer">
+© 2026 FC Barcelona Store | Designed by Nirdesh 💙❤️
+</div>
+
+</body>
+</html>
